@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://djyahlpwmnlwl"]
+
+[ext_resource type="Script" path="res://snake.gd" id="1_7jjwu"]
+[ext_resource type="Texture2D" uid="uid://bjdrkqhkxkfrf" path="res://assets/S.png" id="2_q1uch"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4atq"]
+size = Vector2(32, 32)
+
+[node name="Snake" type="Node2D"]
+script = ExtResource("1_7jjwu")
+
+[node name="SnakeBody" type="Node2D" parent="."]
+
+[node name="Head" type="Area2D" parent="SnakeBody"]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SnakeBody/Head"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_p4atq")
+
+[node name="Sprite2D" type="Sprite2D" parent="SnakeBody/Head"]
+position = Vector2(16, 16)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_q1uch")
+flip_h = true
+
+[node name="MovementTimer" type="Timer" parent="."]
+unique_name_in_owner = true
