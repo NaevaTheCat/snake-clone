@@ -24,3 +24,5 @@ texture = ExtResource("2_q1uch")
 
 [node name="MovementTimer" type="Timer" parent="."]
 unique_name_in_owner = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
