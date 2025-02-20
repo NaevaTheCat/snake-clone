@@ -15,14 +15,12 @@ script = ExtResource("1_7jjwu")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SnakeBody/Head"]
-position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_p4atq")
 
 [node name="Sprite2D" type="Sprite2D" parent="SnakeBody/Head"]
-position = Vector2(16, 16)
+rotation = 3.14159
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_q1uch")
-flip_h = true
 
 [node name="MovementTimer" type="Timer" parent="."]
 unique_name_in_owner = true
