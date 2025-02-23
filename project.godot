@@ -11,8 +11,18 @@ config_version=5
 [application]
 
 config/name="snake-clone"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_height=640
+
+[global_group]
+
+food=""
+snake=""
 
 [input]
 
